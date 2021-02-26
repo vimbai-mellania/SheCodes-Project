@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+h1,
+h2{ text-align: center;}
+
+h3{ text-align: center;
+font-size: large;
+font-weight: 900;}
+
+ul{padding: 0;}
+
+li{ text-align: center;
+list-style-type: none;}
+
+body{
+  background-image:linear-gradient(#F2F2F2,#A1EEE5 );
+  line-height: 1.5}
+
+img{ display: block;
+margin: 0 auto;}
+
+button{ display: block;
+margin: auto;
+background:#00E6CA;
+padding: 20px 30px 20px ;
+border: 2px solid #00E6CA;
+border-radius: 20px;
+font-size: medium;
+font-style: italic;
+transition: all 200ms;
+box-shadow: #F2F2F2;
+}
+
+button:hover{ background-color: #51EAD7;
+cursor: pointer;
+}
+
+.description{ text-align: center;}
+
+
+.testimonial{font-size: large;
+text-align: center;
+font-style: italic;}
+
+.portfolio{ text-decoration: solid;}
+
+.stars{text-align: center;}
+
+.nameAndAge{
+  font-style: oblique;
+  text-align: center;
+}
+
+.testimonialBreak{width: 50%;}
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <h1><br> 👗</br>
+        Personal Styling
+       <br>
+   <span style="color: #00E6CA">  <em> With</em> </span>
+             <br> Vimbai </br>
+             
+    </h1>
+    <hr/>
+    <br/>
+<h2> Services Offered:</h2>
+<ul>
+    <strong>
+        <em>
+<li> Special Occasion </li>
+<li> Colour Analysis </li>
+<li> Wardrobe Revamp</li>
+</em>
+</strong>
+</ul>
+<br/>
+<p class="description">
+Do you ever feel like you need a whole new look, but your busy lifestyle prevents you from doing so?
+Well, look no further as I am here to help <em> you</em> achieve your dreams. With over 50 years of experience in the styling business, 
+I can help you achieve a look you'll be proud of and be able to maintain even after using these services. 
+
+<div>
+<img src="https://johnlewis.scene7.com/is/image/JohnLewis/personal-styling-jeans-010420?$cms-max-image-threshold$&$rsp-home-hero-lg$&resMode=sharp&wid=1200&fit=hfit,1" width="350"/>  
+
+</div>
+<br>
+</p>
+<h3>
+<div > Testimonials </div>
+</h3>
+<br>
+<p class="stars">
+⭐︎⭐︎⭐︎⭐︎⭐︎
+</p>
+</br>
+<p class=" testimonial">
+"Really liked the service! I went for a colour analysis, and purchased the clothes with these colours. 
+People have complimented my skin tone more and I feel more confident". 
+</p>
+<p class="nameAndAge">
+  - Jade, 25
+</p>
+<hr class="testimonialBreak"/>
+
+<p class="stars">
+⭐︎⭐︎⭐︎⭐︎⭐︎
+</p>
+</br>
+<p class=" testimonial">
+Amazing work! They worked well with my style and gave good advice I can take on for years to come
+</p>
+<p class="nameAndAge">
+  - Alice, 29
+</p>
+<hr class="testimonialBreak"/>
+<br/>
+<button>Style Me Up! </button>
+
+  <a class=" portfolio" href="https://www.vimbai.co.uk/" target="_blank"/>
+    <br> Coding by Vimbai Chapungu </br>
+
+</p>
+<script>
+
+function styling() {
+  let name = prompt (" What is your name?");
+ let age= prompt (" How old are you?");
+  if (age>=18) {  
+    let email= prompt (" Hi, "+ name+" what is your email address?"); 
+     alert (" Thank you "+ name+ " we'll be in touch!");
+    
+  } else { 
+    alert("Sorry you are not old enough for this service")
+    
+  }
+  if (age>=18) { 
+    let h1 = document.querySelector("h1");
+          h1.innerHTML =  "👗 <br/> Personal Styling"+
+  " <span style=color:#00E6CA>  <em> <br/>For</em> </span>"+
+            " <br>" + name;
+  } 
+}
+
+let styleMeUp= document.querySelector("button");
+styleMeUp.addEventListener("click", styling);
+
+
+</script>
+  </body>
+</html>
